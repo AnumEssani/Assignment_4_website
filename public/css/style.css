@@ -1,0 +1,139 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&display=swap');
+*{
+    font-family: 'Oswald', sans-serif;
+}
+.bg-dark{
+    background-color:#bfdbe3 !important;
+    color:black !important;
+}
+.navbar-brand{
+    transition: all 0.5s ease-in;
+}
+.nav-item a{
+    color: black !important;
+}
+.navbar-brand{
+    color:black !important
+    
+}
+.navbar-brand img{
+    width:70px
+}
+.navbar-brand h1{
+    font-size: x-large;
+}
+.nav-item:hover a{
+    color:white;
+    background-color: #5abbd6;
+}
+.hover-img{
+    height:280px;
+    width:100%;
+    overflow: hidden;
+    position: relative;
+
+}
+.hover-img img{
+    width:100%;
+    height:100%;
+    position:absolute;
+    display:block;
+    transition: all 0.5s ease;
+}
+.hover-text{
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    display: flex;
+    color:white;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+.hover-text p{
+    transform: translatey(800%);
+    transition: all 0.5s ease;
+}
+
+.hover-img:hover img{
+   transform: scale(1.1);
+   
+}
+.hover-img:hover p{
+    transform: translatey(400%);
+
+}
+/* .slide-right img{
+    transform: translatex(-20%);
+}
+.slide-right-1 img{
+    transform: translatex(-30%);
+} */
+
+.parallex{
+    height:30%
+}
+.parallex img{
+    width: 100%;
+}
+.about-product img{
+    max-height: 300px;
+}
+.story{
+    margin-top: 20px;
+    background-image: url(../images/how\ we\ work.jpg);
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:0px -300px;
+    
+}
+.text-background{
+    background-color: rgba(0, 0, 0, 0.349);
+    color:white;
+    padding:30px
+}
+
+.products img{
+width:200px;
+
+}
+
+
+.footer{
+    color: white;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .story{
+        background-position:0px 0px;
+    }
+    .hover-img{
+        margin-bottom: 20px;
+        width:100%
+    }
+    .hover-img img{
+        width:100%;
+        height:100%;
+    }
+    .slide-right img{
+        transform: translatex(0);
+    }
+    .slide-right-1 img{
+        transform: translatex(0);
+    }
+    .navbar-brand img{
+        width:30px
+    }
+    .navbar-brand h1{
+        font-size: x-large;
+    }
+}
+
+.about {
+    height: 55vh;
+    margin-top: 100px;
+}
